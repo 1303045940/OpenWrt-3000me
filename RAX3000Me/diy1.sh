@@ -28,6 +28,9 @@ git clone --depth 1 -b main https://github.com/EasyTier/luci-app-easytier.git lu
 mv luci-app-easytier/easytier package/easytier
 mv luci-app-easytier/luci-app-easytier package/luci-app-easytier
 rm -rf luci-app-easytier
+# 自定义软件源
+git clone --depth 1 -b main https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-packages
+
 # passwall
 git clone --depth 1 -b main https://github.com/xiaorouji/openwrt-passwall.git luci-app-passwall
 mv luci-app-passwall/passwall package/passwall
