@@ -14,6 +14,12 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 # sed -i '$a src-git small8 https://github.com/kenzok8/small-package' feeds.conf.default
 
+# 移除要替换的包
+rm -rf feeds/packages/lang/golang
+
+# golong1.24依赖
+git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/lang/golang
+
 # 自定义软件源
 git clone --depth 1 -b main https://github.com/QiYueYiya/openwrt-packages package/openwrt-packages
 # Mosdns
