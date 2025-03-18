@@ -35,15 +35,15 @@ mv luci-app-easytier/easytier package/easytier
 mv luci-app-easytier/luci-app-easytier package/luci-app-easytier
 rm -rf luci-app-easytier
 # 自定义软件源
-git clone --depth 1 -b main https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall-packages
+# git clone --depth 1 -b main https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall-packages
 
 # passwall
-git clone --depth 1 -b main https://github.com/xiaorouji/openwrt-passwall.git luci-app-passwall
-mv luci-app-passwall/passwall package/passwall
-mv luci-app-passwall/luci-app-passwall package/luci-app-passwall
-rm -rf luci-app-passwall
+#git clone --depth 1 -b main https://github.com/xiaorouji/openwrt-passwall.git luci-app-passwall
+# mv luci-app-passwall/passwall package/passwall
+# mv luci-app-passwall/luci-app-passwall package/luci-app-passwall
+# rm -rf luci-app-passwall
 # passwall2
 git clone --depth 1 -b main https://github.com/xiaorouji/openwrt-passwall2 luci-app-passwall2
-mv luci-app-passwall2/passwall2 package/passwall2
-mv luci-app-passwall2/luci-app-passwall2 package/luci-app-passwall2
-rm -rf luci-app-passwall2
+#mv luci-app-passwall2/passwall2 package/passwall2
+#mv luci-app-passwall2/luci-app-passwall2 package/luci-app-passwall2
+#rm -rf luci-app-passwall2
